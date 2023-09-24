@@ -13,7 +13,7 @@ const initdb = async () =>
   });
 
 export const putDb = async (id, value) => {
-  console.error(err)
+  console.error()
   console.log('PUT to database');
   const jateDb = await openDB('jate', 1); 
   const tx = jateDb.transaction('jate', 'readwrite');
@@ -25,7 +25,7 @@ export const putDb = async (id, value) => {
 
 
 export const getDb = async () => {
-  console.error(err); 
+  console.error(); 
   console.log('GET from  database'); 
   const jateDb = await openDB('jate', 1); 
   const tx = jateDb.transaction('jate', 'readonly'); 
